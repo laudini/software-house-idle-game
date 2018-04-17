@@ -47,12 +47,27 @@ class Header extends React.Component {
 class Body extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            totalMoney: 0,
+            moneyPerIdleSecond: 0,
+            moneyPerClick: 1
+        }
     }
+
+    addMoneyPerClick = () => {
+        this.setState({
+            totalMoney: this.state.totalMoney + this.state.moneyPerClick
+        })
+    };
 
     render() {
         return (
             <div className="Main-Body">
-                <MainClickSection/>
+                <MainClickSection>
+                    <ClickElement addMoneyPerClick={this.addMoneyPerClick}/>
+                    <Stats moneyPerClick={this.state.moneyPerClick} moneyPerIdleSecond={this.state.moneyPerIdleSecond}
+                           totalMoney={this.state.totalMoney}/>
+                </MainClickSection>
                 <MainImageSection/>
                 <Assets/>
             </div>
@@ -64,22 +79,13 @@ class Body extends React.Component {
 class MainClickSection extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            totalMoney : 0,
-            moneyPerIdleSecond: 0,
-            moneyPerClick: 1
-        }
+
     }
-    addMoneyPerClick = () => {
-        this.setState({
-            totalMoney: this.state.totalMoney + this.state.moneyPerClick
-        })
-    };
+
     render() {
         return (
             <div className="Left-Col">
-                <ClickElement addMoneyPerClick={this.addMoneyPerClick}/>
-                <Stats moneyPerClick={this.state.moneyPerClick} moneyPerIdleSecond={this.state.moneyPerIdleSecond} totalMoney={this.state.totalMoney}/>
+                {this.props.children}
             </div>
         )
     }
@@ -94,7 +100,9 @@ class ClickElement extends React.Component {
     render() {
         return (
             <div className="Click-Image">
-                <button onClick={this.props.addMoneyPerClick} className="Click-Button"><pre>CODE IS GOING TO BE HERE</pre></button>
+                <button onClick={this.props.addMoneyPerClick} className="Click-Button">
+                    <pre>CODE IS GOING TO BE HERE</pre>
+                </button>
             </div>
         )
     }
@@ -141,7 +149,9 @@ class Assets extends React.Component {
             <div className="Right-Col">
                 <header className="Header-Workforce">Your Workforce</header>
                 <div id="space"></div>
-                <div id="worker1"><button>Junior Programmer</button></div>
+                <div id="worker1">
+                    <button>Junior Programmer</button>
+                </div>
                 <div id="worker2">Mid Programmer</div>
                 <div id="worker3">Senior Programmer</div>
                 <div id="worker4">Programming Specialist</div>
