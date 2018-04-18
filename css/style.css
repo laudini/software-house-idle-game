@@ -51,6 +51,10 @@ table {
 
 /* -----------AFTER STYLE RESET--------- */
 
+body {
+    background: blueviolet;
+}
+
 /*----- MAIN CONTAINER ----*/
 .Main-Container {
     width: 1250px;
@@ -98,7 +102,6 @@ table {
 }
 
 .Right-Col {
-    position: relative;
     height: 500px;
     max-width: 300px;
     border: 1px solid orange;
@@ -148,11 +151,15 @@ table {
     position: absolute;
     font-size: 20px;
     text-transform: uppercase;
+    text-align: center;
     height: 1.5em;
+    width: 20%;
     line-height: 1.4em;
+    background: black;
 }
 #space {
     min-height: 100px;
+    background: black;
 }
 #worker1 {
     border: 2px solid orange;
