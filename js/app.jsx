@@ -38,7 +38,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div className="Main-Header">Software House Idle</div>
+            <div className="Main-Header"><h1><span>Software House Idle</span></h1></div>
         )
     }
 
@@ -444,7 +444,7 @@ class Body extends React.Component {
                 <MainClickSection>
                     <ClickElement addMoneyPerClick={this.addMoneyPerClick}/>
                     <Stats moneyPerClick={this.state.moneyPerClick} moneyPerIdleSecond={this.state.moneyPerIdleSecond}
-                           totalMoney={this.state.totalMoney}/>
+                           totalMoney={parseInt(this.state.totalMoney)}/>
                 </MainClickSection>
                 <MainImageSection/>
                 <Assets buyWorkerOne={this.buyWorkerOne} workerOneButtonActive={this.state.workerOneButtonActive}
@@ -560,10 +560,10 @@ class Assets extends React.Component {
 
     render() {
         if (this.props.workerOneButtonActive) {
-            var workerOne = <button ref="btn" onClick={() => {
+            var workerOne = <button onClick={() => {
                 this.props.buyWorkerOne();
                 this.doSomething()
-            }}>Junior Programmer</button>
+            }}>BUY 1</button>
         } else {
             workerOne = <button>Not Enough Money</button>
         }
@@ -708,58 +708,88 @@ class Assets extends React.Component {
                 <header className="Header-Workforce">Your Workforce</header>
                 <div id="space"></div>
                 <div id="worker1">
-                    {workerOne}
+                    <div id="worker1image"></div>
+                    <div>{workerOne}</div>
                 </div>
                 <div id="worker2">
-                    {workerTwo}
+                    <div id="worker2image"></div>
+                    <div>{workerTwo}</div>
                 </div>
                 <div id="worker3">
-                    {workerThree}
+                    <div id="worker3image"></div>
+                    <div>{workerThree}</div>
                 </div>
                 <div id="worker4">
-                    {workerFour}
+                    <div id="worker4image"></div>
+                    <div>{workerFour}
+                    </div>
                 </div>
                 <div id="worker5">
-                    {workerFive}
+                    <div id="worker5image"></div>
+                    <div>{workerFive}
+                    </div>
                 </div>
                 <div id="worker6">
-                    {workerSix}
+                    <div id="worker6image"></div>
+                    <div>{workerSix}
+                    </div>
                 </div>
                 <div id="worker7">
-                    {workerSeven}
+                    <div id="worker7image"></div>
+                    <div>{workerSeven}
+                    </div>
                 </div>
                 <div id="worker8">
-                    {workerEight}
+                    <div id="worker8image"></div>
+                    <div>{workerEight}
+                    </div>
                 </div>
                 <div id="worker9">
-                    {workerNine}
+                    <div id="worker9image"></div>
+                    <div>{workerNine}
+                    </div>
                 </div>
                 <div id="worker10">
-                    {workerTen}
+                    <div id="worker10image"></div>
+                    <div>{workerTen}
+                    </div>
                 </div>
                 <div id="worker11">
-                    {workerEleven}
+                    <div id="worker11image"></div>
+                    <div>{workerEleven}
+                    </div>
                 </div>
                 <div id="worker12">
-                    {workerTwelve}
+                    <div id="worker12image"></div>
+                    <div>{workerTwelve}
+                    </div>
                 </div>
                 <div id="worker13">
-                    {workerThirteen}
+                    <div id="worker13image"></div>
+                    <div>{workerThirteen}</div>
                 </div>
                 <div id="worker14">
-                    {workerFourteen}
+                    <div id="worker14image"></div>
+                    <div>{workerFourteen}</div>
                 </div>
                 <div id="worker15">
-                    {workerFifteen}
+                    <div id="worker15image"></div>
+                    <div>{workerFifteen}
+                    </div>
                 </div>
                 <div id="worker16">
-                    {workerSixteen}
+                    <div id="worker16image"></div>
+                    <div>{workerSixteen}
+                    </div>
                 </div>
                 <div id="worker17">
-                    {workerSeventeen}
+                    <div id="worker17image"></div>
+                    <div>{workerSeventeen}
+                    </div>
                 </div>
                 <div id="worker18">
-                    {workerEighteen}
+                    <div id="worker18image"></div>
+                    <div>{workerEighteen}</div>
                 </div>
 
             </div>

@@ -52,7 +52,10 @@ table {
 /* -----------AFTER STYLE RESET--------- */
 
 body {
-    background: blueviolet;
+    background: black;
+    background: url("../images/main-background.jpg");
+    background-size: contain;
+    /*background: repeating-radial-gradient(black, darkgreen 15%, black 35%);;*/
 }
 
 /*----- MAIN CONTAINER ----*/
@@ -65,12 +68,22 @@ body {
 
  /*-----HEADER------*/
 .Main-Header {
+    height: 100px;
+    line-height: 100px;
+    background: url('../images/header-image.jpg') left no-repeat;
+    background-size: 350px;
+    border-bottom: 15px black solid;
+}
+.Main-Header > h1 {
     text-align: center;
     text-transform: uppercase;
     height: 100px;
-    line-height: 100px;
-    font-size: 40px;
-    border-bottom: 1px solid red;
+    line-height: 150px;
+    font-size: 50px;
+    font-weight: 900;
+}
+.Main-Header > h1> span {
+    background: black;
 }
 
 /*----MAIN BODY ----*/
@@ -78,6 +91,7 @@ body {
     display: flex;
     justify-content: space-between;
     height: auto;
+    border: 1px solid green;
 }
 
 .Left-Col {
@@ -88,15 +102,13 @@ body {
 
     max-width: 300px;
     height: 500px;
-    border: 1px solid orange;
 
 }
 
 .Center-Col {
-    height: 500px;
+    height: auto;
     flex-grow: 3;
-    border: 1px solid orange;
-    background-color: white;
+    background: white;
     background-image: url("../images/main-image.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -105,8 +117,7 @@ body {
 .Right-Col {
     height: 500px;
     max-width: 300px;
-    border: 1px solid orange;
-
+    background: linear-gradient(to right, black, darkgreen);
 
     flex-grow: 1;
     display: flex;
@@ -118,7 +129,7 @@ body {
 
 /*----LEFT COLUMN ELEMENTS----*/
 .Click-Image {
-    border-bottom: 1px solid red;
+    border-bottom: 3px dotted black;
     height: 50%;
     display: flex;
     align-items: center;
@@ -128,7 +139,7 @@ body {
     width: 80%;
     height: 80%;
     padding: 5px;
-    border: 1px solid orangered;
+    border: 1px solid orange;
     border-radius: 15%;
     background: black;
     /*display: flex;*/
@@ -159,147 +170,255 @@ body {
     background: black;
 }
 #space {
-    min-height: 100px;
+    min-height: 50px;
     background: black;
 }
 #worker1 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p1.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker2 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p2.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker3 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p4.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker4 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p5.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker5 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p8.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker6 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p17.svg") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker7 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p18.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker8 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p19.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker9 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p20.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker10 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p23.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker11 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p22.svg") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker12 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p24.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker13 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p25.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker14 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p26.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker15 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p27.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #worker16 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p28.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 #worker17 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/p29.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 #worker18 {
-    border: 2px solid orange;
-    border-radius: 25%;
+    margin: 15px;
+    border: 1px solid yellow;
+    background: url("../images/gaben.png") no-repeat center;
+    background-size: contain;
     width: 250px;
     text-align: center;
     min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
