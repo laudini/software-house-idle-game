@@ -266,6 +266,98 @@ class Body extends React.Component {
 
     calculateMoney = () => {
 
+        if (this.state.workerOneLevel >= 10) {
+            this.setState({
+                moneyPerClick : 60
+            })
+        }
+        if (this.state.workerTwoLevel >= 10) {
+            this.setState({
+                moneyPerClick : 300
+            })
+        }
+        if (this.state.workerThreeLevel >= 10) {
+            this.setState({
+                moneyPerClick : 1750
+            })
+        }
+        if (this.state.workerFourLevel >= 10) {
+            this.setState({
+                moneyPerClick : 8000
+            })
+        }
+        if (this.state.workerFiveLevel >= 10) {
+            this.setState({
+                moneyPerClick : 35000
+            })
+        }
+        if (this.state.workerSixLevel >= 10) {
+            this.setState({
+                moneyPerClick : 170000
+            })
+        }
+        if (this.state.workerSevenLevel >= 10) {
+            this.setState({
+                moneyPerClick : 660000
+            })
+        }
+        if (this.state.workerEightLevel >= 10) {
+            this.setState({
+                moneyPerClick : 3500000
+            })
+        }
+        if (this.state.workerNineLevel >= 10) {
+            this.setState({
+                moneyPerClick : 14000000
+            })
+        }
+        if (this.state.workerTenLevel >= 10) {
+            this.setState({
+                moneyPerClick : 60000000
+            })
+        }
+        if (this.state.workerElevenLevel >= 10) {
+            this.setState({
+                moneyPerClick : 300000000
+            })
+        }
+        if (this.state.workerTwelveLevel >= 10) {
+            this.setState({
+                moneyPerClick : 1500000000
+            })
+        }
+        if (this.state.workerThirteenLevel >= 10) {
+            this.setState({
+                moneyPerClick : 7500000000
+            })
+        }
+        if (this.state.workerFourteenLevel >= 10) {
+            this.setState({
+                moneyPerClick : 37500000000
+            })
+        }
+        if (this.state.workerFifteenLevel >= 10) {
+            this.setState({
+                moneyPerClick : 150000000000
+            })
+        }
+        if (this.state.workerSixteenLevel >= 10) {
+            this.setState({
+                moneyPerClick : 750000000000
+            })
+        }
+        if (this.state.workerSeventeenLevel >= 10) {
+            this.setState({
+                moneyPerClick : 3500000000000
+            })
+        }
+        if (this.state.workerEighteenLevel >= 10) {
+            this.setState({
+                moneyPerClick : 16000000000000
+            })
+        }
+
+
         if (this.state.totalMoney >= (this.state.workerOnePrice * this.state.workerOneLevel)) {
             this.setState({
                 workerOneButtonActive: true
@@ -532,7 +624,7 @@ class ClickElement extends React.Component {
     }
 
     generateText = () => {
-        let texts = ['class Coders extends..', 'hoist.. what?','{this.props.childr..','twitch.tv/laudagaming','<strong>Very fun...</strong>', 'Coffee Time', 'Is HL3 coming?', 'Free itans plx', '<input typ...', '..stackoverflo..', '$(\'aja..)', 'https://por..'];
+        let texts = ['class Coders extends..', 'hoist.. what?','{this.props.childr..','twitch.tv/laudagaming','<strong>{text}</st..', 'U makin NOIZ bruh', 'Is HL3 coming?', 'Free itans plx', '<input typ...', '..stackoverflo..', '$(\'aja..)', 'https://por..','THIS TEXT IS RED','lorem10'];
         let textsLength = texts.length - 1;
         let codeIt = texts[Math.round(Math.random() * textsLength)];
         this.setState({
@@ -902,7 +994,7 @@ class Assets extends React.Component {
                             <div>{this.state.onePrice}</div>
                         </div>
                     </div>
-                    <div id="worker1image">Junior Dev</div>
+                    <div id="worker1image" className="names">Junior Dev</div>
                     <div>{workerOne}</div>
                 </div>
                 <div id="worker2">
@@ -916,7 +1008,7 @@ class Assets extends React.Component {
                             <div>{this.state.twoPrice}</div>
                         </div>
                     </div>
-                    <div id="worker2image"></div>
+                    <div id="worker2image" className="names">Mid Dev</div>
                     <div>{workerTwo}</div>
                 </div>
                 <div id="worker3">
@@ -930,7 +1022,7 @@ class Assets extends React.Component {
                             <div>{this.state.threePrice}</div>
                         </div>
                     </div>
-                    <div id="worker3image"></div>
+                    <div id="worker3image" className="names">Senior Dev</div>
                     <div>{workerThree}</div>
                 </div>
                 <div id="worker4">
@@ -944,7 +1036,7 @@ class Assets extends React.Component {
                             <div>{this.state.fourPrice}</div>
                         </div>
                     </div>
-                    <div id="worker4image"></div>
+                    <div id="worker4image" className="names">Spec1al1st</div>
                     <div>{workerFour}
                     </div>
                 </div>
@@ -959,7 +1051,7 @@ class Assets extends React.Component {
                             <div>{this.state.fivePrice}</div>
                         </div>
                     </div>
-                    <div id="worker5image"></div>
+                    <div id="worker5image" className="names">Programming Manager</div>
                     <div>{workerFive}
                     </div>
                 </div>
@@ -974,7 +1066,7 @@ class Assets extends React.Component {
                             <div>{this.state.sixPrice}</div>
                         </div>
                     </div>
-                    <div id="worker6image"></div>
+                    <div id="worker6image" className="names">Analyst</div>
                     <div>{workerSix}
                     </div>
                 </div>
@@ -989,7 +1081,7 @@ class Assets extends React.Component {
                             <div>{this.state.sevenPrice}</div>
                         </div>
                     </div>
-                    <div id="worker7image"></div>
+                    <div id="worker7image" className="names">Experienced Analyst</div>
                     <div>{workerSeven}
                     </div>
                 </div>
@@ -1004,7 +1096,7 @@ class Assets extends React.Component {
                             <div>{this.state.eightPrice}</div>
                         </div>
                     </div>
-                    <div id="worker8image"></div>
+                    <div id="worker8image" className="names">Analyze Manager</div>
                     <div>{workerEight}
                     </div>
                 </div>
@@ -1019,7 +1111,7 @@ class Assets extends React.Component {
                             <div>{this.state.ninePrice}</div>
                         </div>
                     </div>
-                    <div id="worker9image"></div>
+                    <div id="worker9image" className="names">Junior Tester</div>
                     <div>{workerNine}
                     </div>
                 </div>
@@ -1034,7 +1126,7 @@ class Assets extends React.Component {
                             <div>{this.state.tenPrice}</div>
                         </div>
                     </div>
-                    <div id="worker10image"></div>
+                    <div id="worker10image" className="names">Mid Tester</div>
                     <div>{workerTen}
                     </div>
                 </div>
@@ -1049,7 +1141,7 @@ class Assets extends React.Component {
                             <div>{this.state.elevenPrice}</div>
                         </div>
                     </div>
-                    <div id="worker11image"></div>
+                    <div id="worker11image" className="names">Senior Tester</div>
                     <div>{workerEleven}
                     </div>
                 </div>
@@ -1064,7 +1156,7 @@ class Assets extends React.Component {
                             <div>{this.state.twelvePrice}</div>
                         </div>
                     </div>
-                    <div id="worker12image"></div>
+                    <div id="worker12image" className="names">Testing Manager</div>
                     <div>{workerTwelve}
                     </div>
                 </div>
@@ -1079,7 +1171,7 @@ class Assets extends React.Component {
                             <div>{this.state.thirteenPrice}</div>
                         </div>
                     </div>
-                    <div id="worker13image"></div>
+                    <div id="worker13image" className="names">Graphic Designer</div>
                     <div>{workerThirteen}</div>
                 </div>
                 <div id="worker14">
@@ -1093,7 +1185,7 @@ class Assets extends React.Component {
                             <div>{this.state.fourteenPrice}</div>
                         </div>
                     </div>
-                    <div id="worker14image"></div>
+                    <div id="worker14image" className="names">Grzegorz</div>
                     <div>{workerFourteen}</div>
                 </div>
                 <div id="worker15">
@@ -1107,7 +1199,7 @@ class Assets extends React.Component {
                             <div>{this.state.fifteenPrice}</div>
                         </div>
                     </div>
-                    <div id="worker15image"></div>
+                    <div id="worker15image" className="names">Graphic Manager</div>
                     <div>{workerFifteen}
                     </div>
                 </div>
@@ -1122,7 +1214,7 @@ class Assets extends React.Component {
                             <div>{this.state.sixteenPrice}</div>
                         </div>
                     </div>
-                    <div id="worker16image"></div>
+                    <div id="worker16image" className="names">Vice-President</div>
                     <div>{workerSixteen}
                     </div>
                 </div>
@@ -1137,7 +1229,7 @@ class Assets extends React.Component {
                             <div>{this.state.seventeenPrice}</div>
                         </div>
                     </div>
-                    <div id="worker17image"></div>
+                    <div id="worker17image" className="names">Assistant</div>
                     <div>{workerSeventeen}
                     </div>
                 </div>
@@ -1152,7 +1244,7 @@ class Assets extends React.Component {
                             <div>{this.state.eighteenPrice}</div>
                         </div>
                     </div>
-                    <div id="worker18image"></div>
+                    <div id="worker18image" className="names">Gaben Himself</div>
                     <div>{workerEighteen}</div>
                 </div>
 
