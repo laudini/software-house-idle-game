@@ -526,13 +526,29 @@ class MainClickSection extends React.Component {
 class ClickElement extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            text: 'SMASH ME <.<'
+        }
     }
+
+    generateText = () => {
+        let texts = ['class Coders extends..', 'hoist.. what?','{this.props.childr..','twitch.tv/laudagaming','<strong>Very fun...</strong>', 'Coffee Time', 'Is HL3 coming?', 'Free itans plx', '<input typ...', '..stackoverflo..', '$(\'aja..)', 'https://por..'];
+        let textsLength = texts.length - 1;
+        let codeIt = texts[Math.round(Math.random() * textsLength)];
+        this.setState({
+            text: codeIt
+        })
+    };
 
     render() {
         return (
             <div className="Click-Image">
-                <button onClick={this.props.addMoneyPerClick} className="Click-Button">
-                    <pre>CODE IS GOING TO BE HERE</pre>
+                <button onClick={() => {
+                    this.props.addMoneyPerClick();
+                    this.generateText()
+                }}
+                        className="Click-Button">
+                    <pre>{this.state.text}</pre>
                 </button>
             </div>
         )
@@ -886,7 +902,7 @@ class Assets extends React.Component {
                             <div>{this.state.onePrice}</div>
                         </div>
                     </div>
-                    <div id="worker1image"></div>
+                    <div id="worker1image">Junior Dev</div>
                     <div>{workerOne}</div>
                 </div>
                 <div id="worker2">
