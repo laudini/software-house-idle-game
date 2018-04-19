@@ -124,7 +124,6 @@ class Body extends React.Component {
             workerEighteenLevel: 1,
             workerEighteenButtonActive: false,
 
-
         };
     }
 
@@ -447,33 +446,58 @@ class Body extends React.Component {
                            totalMoney={parseInt(this.state.totalMoney)}/>
                 </MainClickSection>
                 <MainImageSection/>
-                <Assets buyWorkerOne={this.buyWorkerOne} workerOneButtonActive={this.state.workerOneButtonActive}
-                        buyWorkerTwo={this.buyWorkerTwo} workerTwoButtonActive={this.state.workerTwoButtonActive}
+                <Assets buyWorkerOne={this.buyWorkerOne}
+                        workerOneButtonActive={this.state.workerOneButtonActive}
+                        currentPrice={this.state.workerOnePrice * this.state.workerOneLevel}
+
+                        buyWorkerTwo={this.buyWorkerTwo}
+                        workerTwoButtonActive={this.state.workerTwoButtonActive}
+
                         buyWorkerThree={this.buyWorkerThree}
                         workerThreeButtonActive={this.state.workerThreeButtonActive}
-                        buyWorkerFour={this.buyWorkerFour} workerFourButtonActive={this.state.workerFourButtonActive}
-                        buyWorkerFive={this.buyWorkerFive} workerFiveButtonActive={this.state.workerFiveButtonActive}
-                        buyWorkerSix={this.buyWorkerSix} workerSixButtonActive={this.state.workerSixButtonActive}
+
+                        buyWorkerFour={this.buyWorkerFour}
+                        workerFourButtonActive={this.state.workerFourButtonActive}
+
+                        buyWorkerFive={this.buyWorkerFive}
+                        workerFiveButtonActive={this.state.workerFiveButtonActive}
+
+                        buyWorkerSix={this.buyWorkerSix}
+                        workerSixButtonActive={this.state.workerSixButtonActive}
+
                         buyWorkerSeven={this.buyWorkerSeven}
                         workerSevenButtonActive={this.state.workerSevenButtonActive}
+
                         buyWorkerEight={this.buyWorkerEight}
                         workerEightButtonActive={this.state.workerEightButtonActive}
-                        buyWorkerNine={this.buyWorkerNine} workerNineButtonActive={this.state.workerNineButtonActive}
-                        buyWorkerTen={this.buyWorkerTen} workerTenButtonActive={this.state.workerTenButtonActive}
+
+                        buyWorkerNine={this.buyWorkerNine}
+                        workerNineButtonActive={this.state.workerNineButtonActive}
+
+                        buyWorkerTen={this.buyWorkerTen}
+                        workerTenButtonActive={this.state.workerTenButtonActive}
+
                         buyWorkerEleven={this.buyWorkerEleven}
                         workerElevenButtonActive={this.state.workerElevenButtonActive}
+
                         buyWorkerTwelve={this.buyWorkerTwelve}
                         workerTwelveButtonActive={this.state.workerTwelveButtonActive}
+
                         buyWorkerThirteen={this.buyWorkerThirteen}
                         workerThirteenButtonActive={this.state.workerThirteenButtonActive}
+
                         buyWorkerFourteen={this.buyWorkerFourteen}
                         workerFourteenButtonActive={this.state.workerFourteenButtonActive}
+
                         buyWorkerFifteen={this.buyWorkerFifteen}
                         workerFifteenButtonActive={this.state.workerFifteenButtonActive}
+
                         buyWorkerSixteen={this.buyWorkerSixteen}
                         workerSixteenButtonActive={this.state.workerSixteenButtonActive}
+
                         buyWorkerSeventeen={this.buyWorkerSeventeen}
                         workerSeventeenButtonActive={this.state.workerSeventeenButtonActive}
+
                         buyWorkerEighteen={this.buyWorkerEighteen}
                         workerEighteenButtonActive={this.state.workerEighteenButtonActive}
                 />
@@ -552,17 +576,161 @@ class MainImageSection extends React.Component {
 class Assets extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            oneLevel: 1,
+            onePrice: 5,
+            twoLevel: 1,
+            twoPrice: 200,
+            threeLevel: 1,
+            threePrice: 1000,
+            fourLevel: 1,
+            fourPrice: 5000,
+            fiveLevel: 1,
+            fivePrice: 25000,
+            sixLevel: 1,
+            sixPrice: 125000,
+            sevenLevel: 1,
+            sevenPrice: 625000,
+            eightLevel: 1,
+            eightPrice: 3125000,
+            nineLevel: 1,
+            ninePrice: 15625000,
+            tenLevel: 1,
+            tenPrice: 78125000,
+            elevenLevel: 1,
+            elevenPrice: 390625000,
+            twelveLevel: 1,
+            twelvePrice: 1953125000,
+            thirteenLevel: 1,
+            thirteenPrice: 9765625000,
+            fourteenLevel: 1,
+            fourteenPrice: 48828125000,
+            fifteenLevel: 1,
+            fifteenPrice: 1220703125000,
+            sixteenLevel: 1,
+            sixteenPrice: 6103515625000,
+            seventeenLevel: 1,
+            seventeenPrice: 30517578120000,
+            eighteenLevel: 1,
+            eighteenPrice: 152587890600000
+        }
     }
 
-    doSomething = () => {
-        //this is going to be used to block multiple clicks
+    oneCalc = () => {
+        this.setState({
+            oneLevel: this.state.oneLevel + 1,
+            onePrice: 5 * (this.state.oneLevel + 1)
+        })
     };
+    twoCalc = () => {
+        this.setState({
+            twoLevel: this.state.twoLevel + 1,
+            twoPrice: 200 * (this.state.twoLevel + 1)
+        })
+    };
+    threeCalc = () => {
+        this.setState({
+            threeLevel: this.state.threeLevel + 1,
+            threePrice: 1000 * (this.state.threeLevel + 1)
+        })
+    };
+    fourCalc = () => {
+        this.setState({
+            fourLevel: this.state.fourLevel + 1,
+            fourPrice: 5000 * (this.state.fourLevel + 1)
+        })
+    };
+    fiveCalc = () => {
+        this.setState({
+            fiveLevel: this.state.fiveLevel + 1,
+            fivePrice: 25000 * (this.state.fiveLevel + 1)
+        })
+    };
+    sixCalc = () => {
+        this.setState({
+            sixLevel: this.state.sixLevel + 1,
+            sixPrice: 125000 * (this.state.sixLevel + 1)
+        })
+    };
+    sevenCalc = () => {
+        this.setState({
+            sevenLevel: this.state.sevenLevel + 1,
+            sevenPrice: 625000 * (this.state.sevenLevel + 1)
+        })
+    };
+    eightCalc = () => {
+        this.setState({
+            eightLevel: this.state.eightLevel + 1,
+            eightPrice: 3125000 * (this.state.eightLevel + 1)
+        })
+    };
+    nineCalc = () => {
+        this.setState({
+            nineLevel: this.state.nineLevel + 1,
+            ninePrice: 15625000 * (this.state.nineLevel + 1)
+        })
+    };
+    tenCalc = () => {
+        this.setState({
+            tenLevel: this.state.tenLevel + 1,
+            tenPrice: 78125000 * (this.state.tenLevel + 1)
+        })
+    };
+    elevenCalc = () => {
+        this.setState({
+            elevenLevel: this.state.elevenLevel + 1,
+            elevenPrice: 39062500 * (this.state.elevenLevel + 1)
+        })
+    };
+    twelveCalc = () => {
+        this.setState({
+            twelveLevel: this.state.twelveLevel + 1,
+            twelvePrice: 1953125000 * (this.state.twelveLevel + 1)
+        })
+    };
+    thirteenCalc = () => {
+        this.setState({
+            thirteenLevel: this.state.thirteenLevel + 1,
+            thirteenPrice: 9765625000 * (this.state.thirteenLevel + 1)
+        })
+    };
+    fourteenCalc = () => {
+        this.setState({
+            fourteenLevel: this.state.fourteenLevel + 1,
+            fourteenPrice: 48828125000 * (this.state.fourteenLevel + 1)
+        })
+    };
+    fifteenCalc = () => {
+        this.setState({
+            fifteenLevel: this.state.fifteenLevel + 1,
+            fifteenPrice: 1220703125000 * (this.state.fifteenLevel + 1)
+        })
+    };
+    sixteenCalc = () => {
+        this.setState({
+            sixteenLevel: this.state.sixteenLevel + 1,
+            sixteenPrice: 6103515625000 * (this.state.sixteenLevel + 1)
+        })
+    };
+    seventeenCalc = () => {
+        this.setState({
+            seventeenLevel: this.state.seventeenLevel + 1,
+            seventeenPrice: 30517578120000 * (this.state.seventeenLevel + 1)
+        })
+    };
+    eighteenCalc = () => {
+        this.setState({
+            eighteenLevel: this.state.eighteenLevel + 1,
+            eighteenPrice: 152587890600000 * (this.state.eighteenLevel + 1)
+        })
+    };
+
 
     render() {
         if (this.props.workerOneButtonActive) {
             var workerOne = <button onClick={() => {
                 this.props.buyWorkerOne();
-                this.doSomething()
+                this.oneCalc()
             }}>BUY 1</button>
         } else {
             workerOne = <button>Not Enough Money</button>
@@ -570,224 +738,404 @@ class Assets extends React.Component {
         if (this.props.workerTwoButtonActive) {
             var workerTwo = <button onClick={() => {
                 this.props.buyWorkerTwo();
-                this.doSomething()
-            }}>Mid Programmer</button>
+                this.twoCalc()
+            }}>BUY 1</button>
         } else {
             workerTwo = <button>Not Enough Money</button>
         }
         if (this.props.workerThreeButtonActive) {
             var workerThree = <button onClick={() => {
                 this.props.buyWorkerThree();
-                this.doSomething()
-            }}>Senior Programmer</button>
+                this.threeCalc()
+            }}>BUY 1</button>
         } else {
             workerThree = <button>Not Enough Money</button>
         }
         if (this.props.workerFourButtonActive) {
             var workerFour = <button onClick={() => {
                 this.props.buyWorkerFour();
-                this.doSomething()
-            }}>Programming Specialist</button>
+                this.fourCalc()
+            }}>BUY 1</button>
         } else {
             workerFour = <button>Not Enough Money</button>
         }
         if (this.props.workerFiveButtonActive) {
             var workerFive = <button onClick={() => {
                 this.props.buyWorkerFive();
-                this.doSomething()
-            }}>Programming Manager</button>
+                this.fiveCalc()
+            }}>BUY 1</button>
         } else {
             workerFive = <button>Not Enough Money</button>
         }
         if (this.props.workerSixButtonActive) {
             var workerSix = <button onClick={() => {
                 this.props.buyWorkerSix();
-                this.doSomething()
-            }}>Analyst</button>
+                this.sixCalc()
+            }}>BUY 1</button>
         } else {
             workerSix = <button>Not Enough Money</button>
         }
         if (this.props.workerSevenButtonActive) {
             var workerSeven = <button onClick={() => {
                 this.props.buyWorkerSeven();
-                this.doSomething()
-            }}>Experienced Analyst</button>
+                this.sevenCalc()
+            }}>BUY 1</button>
         } else {
             workerSeven = <button>Not Enough Money</button>
         }
         if (this.props.workerEightButtonActive) {
             var workerEight = <button onClick={() => {
                 this.props.buyWorkerEight();
-                this.doSomething()
-            }}>Analyze Manager</button>
+                this.eightCalc()
+            }}>BUY 1</button>
         } else {
             workerEight = <button>Not Enough Money</button>
         }
         if (this.props.workerNineButtonActive) {
             var workerNine = <button onClick={() => {
                 this.props.buyWorkerNine();
-                this.doSomething()
-            }}>Junior Tester</button>
+                this.nineCalc()
+            }}>BUY 1</button>
         } else {
             workerNine = <button>Not Enough Money</button>
         }
         if (this.props.workerTenButtonActive) {
             var workerTen = <button onClick={() => {
                 this.props.buyWorkerTen();
-                this.doSomething()
-            }}>Mid Tester</button>
+                this.tenCalc()
+            }}>BUY 1</button>
         } else {
             workerTen = <button>Not Enough Money</button>
         }
         if (this.props.workerElevenButtonActive) {
             var workerEleven = <button onClick={() => {
                 this.props.buyWorkerEleven();
-                this.doSomething()
-            }}>Senior Tester</button>
+                this.elevenCalc()
+            }}>BUY 1</button>
         } else {
             workerEleven = <button>Not Enough Money</button>
         }
         if (this.props.workerTwelveButtonActive) {
             var workerTwelve = <button onClick={() => {
                 this.props.buyWorkerTwelve();
-                this.doSomething()
-            }}>Testing Manager</button>
+                this.twelveCalc()
+            }}>BUY 1</button>
         } else {
             workerTwelve = <button>Not Enough Money</button>
         }
         if (this.props.workerThirteenButtonActive) {
             var workerThirteen = <button onClick={() => {
                 this.props.buyWorkerThirteen();
-                this.doSomething()
-            }}>Graphic Designer</button>
+                this.thirteenCalc()
+            }}>GBUY 1</button>
         } else {
             workerThirteen = <button>Not Enough Money</button>
         }
         if (this.props.workerFourteenButtonActive) {
             var workerFourteen = <button onClick={() => {
                 this.props.buyWorkerFourteen();
-                this.doSomething()
-            }}>Experienced Graphic Designeer</button>
+                this.fourteenCalc()
+            }}>BUY 1</button>
         } else {
             workerFourteen = <button>Not Enough Money</button>
         }
         if (this.props.workerFifteenButtonActive) {
             var workerFifteen = <button onClick={() => {
                 this.props.buyWorkerFifteen();
-                this.doSomething()
-            }}>Graphic Manager</button>
+                this.fifteenCalc()
+            }}>BUY 1</button>
         } else {
             workerFifteen = <button>Not Enough Money</button>
         }
         if (this.props.workerSixteenButtonActive) {
             var workerSixteen = <button onClick={() => {
                 this.props.buyWorkerSixteen();
-                this.doSomething()
-            }}>Vice-President</button>
+                this.sixteenCalc()
+            }}>BUY 1</button>
         } else {
             workerSixteen = <button>Not Enough Money</button>
         }
         if (this.props.workerSeventeenButtonActive) {
             var workerSeventeen = <button onClick={() => {
                 this.props.buyWorkerSeventeen();
-                this.doSomething()
-            }}>Assistant</button>
+                this.seventeenCalc()
+            }}>BUY 1</button>
         } else {
             workerSeventeen = <button>Not Enough Money</button>
         }
         if (this.props.workerEighteenButtonActive) {
             var workerEighteen = <button onClick={() => {
                 this.props.buyWorkerEighteen();
-                this.doSomething()
-            }}>Head of Development</button>
+                this.eighteenCalc()
+            }}>BUY GABEN</button>
         } else {
-            workerEighteen = <button>Not Enough Money</button>
+            workerEighteen = <button>Can't buy Gaben!</button>
         }
         return (
             <div className="Right-Col">
                 <header className="Header-Workforce">Your Workforce</header>
                 <div id="space"></div>
                 <div id="worker1">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.oneLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.onePrice}</div>
+                        </div>
+                    </div>
                     <div id="worker1image"></div>
                     <div>{workerOne}</div>
                 </div>
                 <div id="worker2">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.twoLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.twoPrice}</div>
+                        </div>
+                    </div>
                     <div id="worker2image"></div>
                     <div>{workerTwo}</div>
                 </div>
                 <div id="worker3">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.threeLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.threePrice}</div>
+                        </div>
+                    </div>
                     <div id="worker3image"></div>
                     <div>{workerThree}</div>
                 </div>
                 <div id="worker4">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.fourLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.fourPrice}</div>
+                        </div>
+                    </div>
                     <div id="worker4image"></div>
                     <div>{workerFour}
                     </div>
                 </div>
                 <div id="worker5">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.fiveLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.fivePrice}</div>
+                        </div>
+                    </div>
                     <div id="worker5image"></div>
                     <div>{workerFive}
                     </div>
                 </div>
                 <div id="worker6">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.sixLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.sixPrice}</div>
+                        </div>
+                    </div>
                     <div id="worker6image"></div>
                     <div>{workerSix}
                     </div>
                 </div>
                 <div id="worker7">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.sevenLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.sevenPrice}</div>
+                        </div>
+                    </div>
                     <div id="worker7image"></div>
                     <div>{workerSeven}
                     </div>
                 </div>
                 <div id="worker8">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.eightLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.eightPrice}</div>
+                        </div>
+                    </div>
                     <div id="worker8image"></div>
                     <div>{workerEight}
                     </div>
                 </div>
                 <div id="worker9">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.nineLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.ninePrice}</div>
+                        </div>
+                    </div>
                     <div id="worker9image"></div>
                     <div>{workerNine}
                     </div>
                 </div>
                 <div id="worker10">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.tenLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.tenPrice}</div>
+                        </div>
+                    </div>
                     <div id="worker10image"></div>
                     <div>{workerTen}
                     </div>
                 </div>
                 <div id="worker11">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.elevenLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.elevenPrice}</div>
+                        </div>
+                    </div>
                     <div id="worker11image"></div>
                     <div>{workerEleven}
                     </div>
                 </div>
                 <div id="worker12">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.twelveLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.twelvePrice}</div>
+                        </div>
+                    </div>
                     <div id="worker12image"></div>
                     <div>{workerTwelve}
                     </div>
                 </div>
                 <div id="worker13">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.thirteenLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.thirteenPrice}</div>
+                        </div>
+                    </div>
                     <div id="worker13image"></div>
                     <div>{workerThirteen}</div>
                 </div>
                 <div id="worker14">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.fourteenLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.fourteenPrice}</div>
+                        </div>
+                    </div>
                     <div id="worker14image"></div>
                     <div>{workerFourteen}</div>
                 </div>
                 <div id="worker15">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.fifteenLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.fifteenPrice}</div>
+                        </div>
+                    </div>
                     <div id="worker15image"></div>
                     <div>{workerFifteen}
                     </div>
                 </div>
                 <div id="worker16">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.sixteenLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.sixteenPrice}</div>
+                        </div>
+                    </div>
                     <div id="worker16image"></div>
                     <div>{workerSixteen}
                     </div>
                 </div>
                 <div id="worker17">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.seventeenLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.seventeenPrice}</div>
+                        </div>
+                    </div>
                     <div id="worker17image"></div>
                     <div>{workerSeventeen}
                     </div>
                 </div>
                 <div id="worker18">
+                    <div className="info">
+                        <div>
+                            <div>LEVEL:</div>
+                            <div>{this.state.eighteenLevel}</div>
+                        </div>
+                        <div>
+                            <div>PRICE:</div>
+                            <div>{this.state.eighteenPrice}</div>
+                        </div>
+                    </div>
                     <div id="worker18image"></div>
                     <div>{workerEighteen}</div>
                 </div>

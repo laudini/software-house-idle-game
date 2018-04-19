@@ -173,6 +173,15 @@ body {
     min-height: 50px;
     background: black;
 }
+
+.info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
 #worker1 {
     margin: 15px;
     border: 1px solid yellow;
