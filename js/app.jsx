@@ -675,7 +675,26 @@ class MainImageSection extends React.Component {
 
     render() {
         return (
-            <div className="Center-Col"></div>
+            <div className="Center-Col"><div className="feet showFeet1"></div>
+                <div className="feet showFeet2"></div>
+                <div className="feet showFeet3"></div>
+                <div className="feet showFeet4"></div>
+                <div className="feet showFeet5"></div>
+                <div className="feet showFeet6"></div>
+                <div className="feet showFeet7"></div>
+                <div className="feet showFeet8"></div>
+                <div className="feet showFeet9"></div>
+                <div className="feet showFeet10"></div>
+                <div className="feet showFeet11"></div>
+                <div className="feet showFeet12"></div>
+                <div className="feet showFeet13"></div>
+                <div className="feet showFeet14"></div>
+                <div className="feet showFeet15"></div>
+                <div className="feet showFeet16"></div>
+                <div className="feet showFeet17"></div>
+                <div className="feet showFeet18"></div>
+
+            </div>
         )
     }
 

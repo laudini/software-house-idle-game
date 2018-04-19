@@ -61,12 +61,13 @@ body {
 /*----- MAIN CONTAINER ----*/
 .Main-Container {
     width: 1250px;
+    height: auto;
     margin: 0 auto;
     background: black;
     color: white;
 }
 
- /*-----HEADER------*/
+/*-----HEADER------*/
 .Main-Header {
     height: 100px;
     line-height: 100px;
@@ -74,6 +75,7 @@ body {
     background-size: 350px;
     border-bottom: 15px black solid;
 }
+
 .Main-Header > h1 {
     text-align: center;
     text-transform: uppercase;
@@ -82,7 +84,8 @@ body {
     font-size: 50px;
     font-weight: 900;
 }
-.Main-Header > h1> span {
+
+.Main-Header > h1 > span {
     background: black;
 }
 
@@ -106,12 +109,9 @@ body {
 }
 
 .Center-Col {
-    height: auto;
     flex-grow: 3;
-    background: white;
-    background-image: url("../images/main-image.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background: url("../images/main-image2.jpg") no-repeat;
+    background-size: cover;
 }
 
 .Right-Col {
@@ -135,6 +135,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .Click-Button {
     width: 80%;
     height: 80%;
@@ -143,10 +144,12 @@ body {
     border-radius: 15%;
     background: black;
 }
+
 .Click-Button:hover {
     font-size: 110%;
     color: lime;
 }
+
 .Stats {
     height: 50%;
     display: flex;
@@ -167,10 +170,12 @@ body {
     line-height: 1.4em;
     background: black;
 }
+
 #space {
     min-height: 50px;
     background: black;
 }
+
 .names {
     color: lime;
     font-weight: 700;
@@ -408,6 +413,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
 #worker17 {
     margin: 15px;
     border: 1px solid yellow;
@@ -421,6 +427,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
 #worker18 {
     margin: 15px;
     border: 1px solid yellow;
@@ -438,6 +445,411 @@ body {
 #worker18image {
     color: red;
 }
+
 #worker14image {
     color: red;
+}
+
+/*CENTER COLUMN FEET*/
+
+.feet {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+@keyframes moveWorkerOne {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 30px;
+        left: 67px;
+    }
+    100% {
+        opacity: 0.5;
+        top: 450px;
+        left: 910px;
+    }
+}
+
+@keyframes moveWorkerTwo {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 30px;
+        left: 67px;
+    }
+    100% {
+        opacity: 0.5;
+        top: 480px;
+        left: 870px;
+    }
+}
+
+@keyframes moveWorkerThree {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 30px;
+        left: 67px;
+    }
+    100% {
+        opacity: 0.5;
+        top: 300px;
+        left: 670px;
+    }
+}
+
+@keyframes moveWorkerFour {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 30px;
+        left: 67px;
+    }
+    100% {
+        opacity: 0.5;
+        top: 280px;
+        left: 720px;
+    }
+}
+
+@keyframes moveWorkerFive {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 30px;
+        left: 67px;
+    }
+    100% {
+        opacity: 0.5;
+        top: 280px;
+        left: 540px;
+    }
+}
+
+@keyframes moveWorkerSix {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 30px;
+        left: 67px;
+    }
+    100% {
+        opacity: 0.5;
+        top: 320px;
+        left: 590px;
+    }
+}
+
+@keyframes moveWorkerSeven {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 30px;
+        left: 67px;
+    }
+    100% {
+        opacity: 0.4;
+        top: 160px;
+        left: 533px;
+    }
+}
+
+@keyframes moveWorkerEight {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 30px;
+        left: 67px;
+    }
+    100% {
+        opacity: 0.4;
+        top: 170px;
+        left: 680px;
+    }
+}
+
+@keyframes moveWorkerNine {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 300px;
+        left: 67px;
+    }
+    100% {
+        opacity: 0.4;
+        top: 200px;
+        left: 590px;
+    }
+}
+
+@keyframes moveWorkerTen {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 30px;
+        left: 67px;
+    }
+    100% {
+        opacity: 0.6;
+        top: 160px;
+        left: 390px;
+    }
+}
+
+@keyframes moveWorkerEleven {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 30px;
+        left: 67px;
+    }
+    100% {
+        opacity: 0.4;
+        top: 210px;
+        left: 350px;
+    }
+}
+
+@keyframes moveWorkerTwelve {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 130px;
+        left: 267px;
+    }
+    100% {
+        opacity: 0.4;
+        top: 450px;
+        left: 350px;
+    }
+}
+
+@keyframes moveWorkerThirteen {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 530px;
+        left: 367px;
+    }
+    100% {
+        opacity: 0.4;
+        top: 300px;
+        left: 380px;
+    }
+}
+@keyframes moveWorkerFourteen {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 130px;
+        left: 967px;
+    }
+    100% {
+        opacity: 0.4;
+        top: 350px;
+        left: 350px;
+    }
+}
+@keyframes moveWorkerFifteen {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 60px;
+        left: 467px;
+    }
+    100% {
+        opacity: 0.4;
+        top: 330px;
+        left: 880px;
+    }
+}
+@keyframes moveWorkerSixteen {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 10px;
+        left: 1167px;
+    }
+    100% {
+        opacity: 0.4;
+        top: 170px;
+        left: 910px;
+    }
+}
+@keyframes moveWorkerSeventeen {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 60px;
+        left: 167px;
+    }
+    100% {
+        opacity: 0.4;
+        top: 200px;
+        left: 870px;
+    }
+}
+@keyframes moveWorkerEighteen {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        top: 430px;
+        left: 97px;
+    }
+    100% {
+        opacity: 0.8;
+        top: 400px;
+        left: 580px;
+    }
+}
+
+
+.showFeet1 {
+    background: url("../images/feet1.png");
+    background-size: cover;
+    animation-name: moveWorkerOne;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet2 {
+    background: url("../images/feet2.png");
+    background-size: cover;
+    animation-name: moveWorkerTwo;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet3 {
+    background: url("../images/feet3.png");
+    background-size: cover;
+    animation-name: moveWorkerThree;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet4 {
+    background: url("../images/feet4.png");
+    background-size: cover;
+    animation-name: moveWorkerFour;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet5 {
+    background: url("../images/feet5.png");
+    background-size: cover;
+    animation-name: moveWorkerFive;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet6 {
+    background: url("../images/feet6.png");
+    background-size: cover;
+    animation-name: moveWorkerSix;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet7 {
+    background: url("../images/feet7.png");
+    background-size: cover;
+    animation-name: moveWorkerSeven;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet8 {
+    background: url("../images/feet8.png");
+    background-size: cover;
+    animation-name: moveWorkerEight;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet9 {
+    background: url("../images/feet9.png");
+    background-size: cover;
+    animation-name: moveWorkerNine;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet10 {
+    background: url("../images/feet10.png");
+    background-size: cover;
+    animation-name: moveWorkerTen;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet11 {
+    background: url("../images/feet11.png");
+    background-size: cover;
+    animation-name: moveWorkerEleven;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.showFeet12 {
+    background: url("../images/feet12.png");
+    background-size: cover;
+    animation-name: moveWorkerTwelve;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet13 {
+    background: url("../images/feet13.png");
+    background-size: cover;
+    animation-name: moveWorkerThirteen;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet14 {
+    background: url("../images/feet14.png");
+    background-size: cover;
+    animation-name: moveWorkerFourteen;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet15 {
+    background: url("../images/feet15.png");
+    background-size: cover;
+    animation-name: moveWorkerFifteen;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet16 {
+    background: url("../images/feet16.png");
+    background-size: cover;
+    animation-name: moveWorkerSixteen;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet17 {
+    background: url("../images/feet17.png");
+    background-size: cover;
+    animation-name: moveWorkerSeventeen;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.showFeet18 {
+    height: 150px;
+    width: 150px;
+    background: url("../images/gaben.png");
+    background-size: cover;
+    animation-name: moveWorkerEighteen;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
