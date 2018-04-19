@@ -157,6 +157,10 @@ body {
     align-items: center;
     justify-content: space-around;
 }
+.Stats > div:nth-child(2n-1):hover {
+    color: lime;
+    font-size: 120%;
+}
 
 /*----RIGHT COLUMN ELEMENTS----*/
 
@@ -465,11 +469,13 @@ body {
     10% {
         top: 30px;
         left: 67px;
+        transform:rotate(300deg);
     }
     100% {
         opacity: 0.5;
         top: 450px;
         left: 910px;
+        transform:rotate(410deg);
     }
 }
 
@@ -485,6 +491,7 @@ body {
         opacity: 0.5;
         top: 480px;
         left: 870px;
+        transform:rotate(200deg);
     }
 }
 
@@ -495,11 +502,13 @@ body {
     10% {
         top: 30px;
         left: 67px;
+        transform:rotate(100deg);
     }
     100% {
         opacity: 0.5;
         top: 300px;
         left: 670px;
+        transform:rotate(1000deg);
     }
 }
 
@@ -515,6 +524,7 @@ body {
         opacity: 0.5;
         top: 280px;
         left: 720px;
+        transform:rotate(2000deg);
     }
 }
 
@@ -530,6 +540,7 @@ body {
         opacity: 0.5;
         top: 280px;
         left: 540px;
+        transform:rotate(40deg);
     }
 }
 
@@ -545,6 +556,7 @@ body {
         opacity: 0.5;
         top: 320px;
         left: 590px;
+        transform:rotate(400deg);
     }
 }
 
@@ -560,6 +572,7 @@ body {
         opacity: 0.4;
         top: 160px;
         left: 533px;
+        transform:rotate(500deg);
     }
 }
 
@@ -575,6 +588,7 @@ body {
         opacity: 0.4;
         top: 170px;
         left: 680px;
+        transform:rotate(250deg);
     }
 }
 
@@ -590,6 +604,7 @@ body {
         opacity: 0.4;
         top: 200px;
         left: 590px;
+        transform:rotate(700deg);
     }
 }
 
@@ -605,6 +620,7 @@ body {
         opacity: 0.6;
         top: 160px;
         left: 390px;
+        transform:rotate(600deg);
     }
 }
 
@@ -620,6 +636,7 @@ body {
         opacity: 0.4;
         top: 210px;
         left: 350px;
+        transform:rotate(260deg);
     }
 }
 
@@ -635,6 +652,7 @@ body {
         opacity: 0.4;
         top: 450px;
         left: 350px;
+        transform:rotate(220deg);
     }
 }
 
@@ -664,6 +682,8 @@ body {
         opacity: 0.4;
         top: 350px;
         left: 350px;
+
+        transform:rotate(700deg);
     }
 }
 @keyframes moveWorkerFifteen {
@@ -692,6 +712,7 @@ body {
         opacity: 0.4;
         top: 170px;
         left: 910px;
+        transform:rotate(800deg);
     }
 }
 @keyframes moveWorkerSeventeen {
@@ -711,15 +732,18 @@ body {
 @keyframes moveWorkerEighteen {
     0% {
         opacity: 0;
+        transform:rotate(0deg);
     }
     10% {
         top: 430px;
         left: 97px;
+        transform:rotate(360deg);
     }
     100% {
         opacity: 0.8;
         top: 400px;
         left: 580px;
+        transform:rotate(3600deg);
     }
 }
 
