@@ -268,92 +268,92 @@ class Body extends React.Component {
 
         if (this.state.workerOneLevel >= 10) {
             this.setState({
-                moneyPerClick : 60
+                moneyPerClick: 60
             })
         }
         if (this.state.workerTwoLevel >= 10) {
             this.setState({
-                moneyPerClick : 300
+                moneyPerClick: 300
             })
         }
         if (this.state.workerThreeLevel >= 10) {
             this.setState({
-                moneyPerClick : 1750
+                moneyPerClick: 1750
             })
         }
         if (this.state.workerFourLevel >= 10) {
             this.setState({
-                moneyPerClick : 8000
+                moneyPerClick: 8000
             })
         }
         if (this.state.workerFiveLevel >= 10) {
             this.setState({
-                moneyPerClick : 35000
+                moneyPerClick: 35000
             })
         }
         if (this.state.workerSixLevel >= 10) {
             this.setState({
-                moneyPerClick : 170000
+                moneyPerClick: 170000
             })
         }
         if (this.state.workerSevenLevel >= 10) {
             this.setState({
-                moneyPerClick : 660000
+                moneyPerClick: 660000
             })
         }
         if (this.state.workerEightLevel >= 10) {
             this.setState({
-                moneyPerClick : 3500000
+                moneyPerClick: 3500000
             })
         }
         if (this.state.workerNineLevel >= 10) {
             this.setState({
-                moneyPerClick : 14000000
+                moneyPerClick: 14000000
             })
         }
         if (this.state.workerTenLevel >= 10) {
             this.setState({
-                moneyPerClick : 60000000
+                moneyPerClick: 60000000
             })
         }
         if (this.state.workerElevenLevel >= 10) {
             this.setState({
-                moneyPerClick : 300000000
+                moneyPerClick: 300000000
             })
         }
         if (this.state.workerTwelveLevel >= 10) {
             this.setState({
-                moneyPerClick : 1500000000
+                moneyPerClick: 1500000000
             })
         }
         if (this.state.workerThirteenLevel >= 10) {
             this.setState({
-                moneyPerClick : 7500000000
+                moneyPerClick: 7500000000
             })
         }
         if (this.state.workerFourteenLevel >= 10) {
             this.setState({
-                moneyPerClick : 37500000000
+                moneyPerClick: 37500000000
             })
         }
         if (this.state.workerFifteenLevel >= 10) {
             this.setState({
-                moneyPerClick : 150000000000
+                moneyPerClick: 150000000000
             })
         }
         if (this.state.workerSixteenLevel >= 10) {
             this.setState({
-                moneyPerClick : 750000000000
+                moneyPerClick: 750000000000
             })
         }
         if (this.state.workerSeventeenLevel >= 10) {
             this.setState({
-                moneyPerClick : 3500000000000
+                moneyPerClick: 3500000000000
             })
         }
         if (this.state.workerEighteenLevel >= 10) {
             this.setState({
-                moneyPerClick : 16000000000000
+                moneyPerClick: 16000000000000
             })
         }
 
@@ -529,6 +529,78 @@ class Body extends React.Component {
     };
 
     render() {
+        if (this.state.workerOneLevel === 2) {
+            let a = document.getElementById("feet1");
+            a.classList.add('showFeet1');
+        }
+        if (this.state.workerTwoLevel === 2) {
+            let b = document.getElementById("feet2");
+            b.classList.add('showFeet2');
+        }
+        if (this.state.workerThreeLevel === 2) {
+            let c = document.getElementById("feet3");
+            c.classList.add('showFeet3');
+        }
+        if (this.state.workerFourLevel === 2) {
+            let d = document.getElementById("feet4");
+            d.classList.add('showFeet4');
+        }
+        if (this.state.workerFiveLevel === 2) {
+            let e = document.getElementById("feet5");
+            e.classList.add('showFeet5');
+        }
+        if (this.state.workerSixLevel === 2) {
+            let f = document.getElementById("feet6");
+            f.classList.add('showFeet6');
+        }
+        if (this.state.workerSevenLevel === 2) {
+            let g = document.getElementById("feet7");
+            g.classList.add('showFeet7');
+        }
+        if (this.state.workerEightLevel === 2) {
+            let h = document.getElementById("feet8");
+            h.classList.add('showFeet8');
+        }
+        if (this.state.workerNineLevel === 2) {
+            let i = document.getElementById("feet9");
+            i.classList.add('showFeet9');
+        }
+        if (this.state.workerTenLevel === 2) {
+            let j = document.getElementById("feet10");
+            j.classList.add('showFeet10');
+        }
+        if (this.state.workerElevenLevel === 2) {
+            let k = document.getElementById("feet11");
+            k.classList.add('showFeet11');
+        }
+        if (this.state.workerTwelveLevel === 2) {
+            let l = document.getElementById("feet12");
+            l.classList.add('showFeet12');
+        }
+        if (this.state.workerThirteenLevel === 2) {
+            let m = document.getElementById("feet13");
+            m.classList.add('showFeet13');
+        }
+        if (this.state.workerFourteenLevel === 2) {
+            let n = document.getElementById("feet14");
+            n.classList.add('showFeet14');
+        }
+        if (this.state.workerFifteenLevel === 2) {
+            let o = document.getElementById("feet15");
+            o.classList.add('showFeet15');
+        }
+        if (this.state.workerSixteenLevel === 2) {
+            let p = document.getElementById("feet16");
+            p.classList.add('showFeet16');
+        }
+        if (this.state.workerSeventeenLevel === 2) {
+            let r = document.getElementById("feet17");
+            r.classList.add('showFeet17');
+        }
+        if (this.state.workerEighteenLevel === 2) {
+            let s = document.getElementById("feet18");
+            s.classList.add('showFeet18');
+        }
 
         return (
             <div className="Main-Body">
@@ -624,7 +696,7 @@ class ClickElement extends React.Component {
     }
 
     generateText = () => {
-        let texts = ['class Coders extends..', 'hoist.. what?','{this.props.childr..','twitch.tv/laudagaming','<strong>{text}</st..', 'U makin NOIZ bruh', 'Is HL3 coming?', 'Free itans plx', '<input typ...', '..stackoverflo..', '$(\'aja..)', 'https://por..','THIS TEXT IS RED','lorem10'];
+        let texts = ['class Coders extends..', 'hoist.. what?', '{this.props.childr..', 'twitch.tv/laudagaming', '<strong>{text}</st..', 'U makin NOIZ bruh', 'Is HL3 coming?', 'Free itans plx', '<input typ...', '..stackoverflo..', '$(\'aja..)', 'https://por..', 'THIS TEXT IS RED', 'lorem10'];
         let textsLength = texts.length - 1;
         let codeIt = texts[Math.round(Math.random() * textsLength)];
         this.setState({
@@ -675,24 +747,25 @@ class MainImageSection extends React.Component {
 
     render() {
         return (
-            <div className="Center-Col"><div className="feet showFeet1"></div>
-                <div className="feet showFeet2"></div>
-                <div className="feet showFeet3"></div>
-                <div className="feet showFeet4"></div>
-                <div className="feet showFeet5"></div>
-                <div className="feet showFeet6"></div>
-                <div className="feet showFeet7"></div>
-                <div className="feet showFeet8"></div>
-                <div className="feet showFeet9"></div>
-                <div className="feet showFeet10"></div>
-                <div className="feet showFeet11"></div>
-                <div className="feet showFeet12"></div>
-                <div className="feet showFeet13"></div>
-                <div className="feet showFeet14"></div>
-                <div className="feet showFeet15"></div>
-                <div className="feet showFeet16"></div>
-                <div className="feet showFeet17"></div>
-                <div className="feet showFeet18"></div>
+            <div className="Center-Col">
+                <div id="feet1" className="feet"></div>
+                <div id="feet2" className="feet"></div>
+                <div id="feet3" className="feet"></div>
+                <div id="feet4" className="feet"></div>
+                <div id="feet5" className="feet"></div>
+                <div id="feet6" className="feet"></div>
+                <div id="feet7" className="feet"></div>
+                <div id="feet8" className="feet"></div>
+                <div id="feet9" className="feet"></div>
+                <div id="feet10" className="feet"></div>
+                <div id="feet11" className="feet"></div>
+                <div id="feet12" className="feet"></div>
+                <div id="feet13" className="feet"></div>
+                <div id="feet14" className="feet"></div>
+                <div id="feet15" className="feet"></div>
+                <div id="feet16" className="feet"></div>
+                <div id="feet17" className="feet"></div>
+                <div id="feet18" className="feet"></div>
 
             </div>
         )
